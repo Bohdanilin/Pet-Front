@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const RTKQueryApi = createApi({
   reducerPath: 'RTKQueryApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: `https://pet-back-unuw.onrender.com`,
+    baseUrl: `https://pet-back-unuw.onrender.com/api`,
     prepareHeaders: (headers, { getState }) => {
       const token = getState().auth.token;
       if (token) {
