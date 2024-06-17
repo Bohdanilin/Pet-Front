@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://goit-team-03-node.onrender.com/api/';
+axios.defaults.baseURL = 'https://pet-back-unuw.onrender.com/';
 
 const setAuthHeader = (token) =>
   (axios.defaults.headers.common.Authorization = `Bearer ${token}`);
